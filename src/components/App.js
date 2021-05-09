@@ -1,7 +1,42 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const App = () => {
-  return (
+class App extends Component {
+  constructor(){
+    super();
+    this.state = {
+      usuarios: [
+        {
+          nombre: 'Jesus',
+          correo: 'jdrom@asd.com',
+          enlace: 'jd.com',
+        },
+        {
+          nombre: 'Platzi',
+          correo: 'platzi@platzi.com',
+          enlace: 'platzi.com',
+        }
+      ]
+    }
+  }
+
+  ponerFilas = () => (
+    this.state.usuarios.map((usuario) => (
+      <tr>
+        <td>
+          { usuario.nombre }
+        </td>
+        <td>
+          { usuario.correo }
+        </td>
+        <td>
+          { usuario.enlace }
+        </td>
+      </tr>
+    ))
+  ) ;
+
+  render(){
+    return(
     <div className="margen">
     <table className="tabla">
       <thead>
@@ -17,33 +52,12 @@ const App = () => {
           </th>
         </tr>
       </thead>
+      { this.ponerFilas() }
       <tbody>
-        <tr>
-          <td>
-            Jesus
-          </td>
-          <td>
-            jdrom@asd.com
-          </td>
-          <td>
-            jd.com
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Platzi
-          </td>
-          <td>
-            platzi@platzi.com
-          </td>
-          <td>
-            platzo.com
-          </td>
-        </tr>
       </tbody>
     </table>
-    </div>
-  );
+    </div>);
+  }
 }
 
 export default App;

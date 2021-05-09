@@ -1,0 +1,17 @@
+npx create-react-app blog_platzi -> crear proyecto de react
+code . -> abrir proyecto en visual
+npm run start -> correr el proyecto
+
+Subir a git (previo a esto crear el repositorio en github): 
+git init
+
+git add .
+
+git commit -m "first commit"
+
+git remote add origin https://github.com/NOMBRE_USUARIO/NOMBRE_PROYECTO.git
+
+git push -u origin master
+
+const -> stateless o componentes funcionales
+class -> componente de clase
