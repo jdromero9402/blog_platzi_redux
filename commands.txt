@@ -29,3 +29,11 @@ npm install react-routes-dom ->
 
 rafce para crear funciones stateless
 
+Redux, toda la informacion de nuestra app en un solo lugar
+ppios: almacenamiento-> estados en un solo lugar, inmutables -> siempre se crean nuevos estados, nunca se reescriben, centralizado -> toda la app en un solo lugar: Redux
+como funciona: estados globales
+cuando utilizar redux: en apps grandes, compartir informacion, lo q sea estilos no se maneja con redux
+ppios 2: store(almacenamiento), Reducers(Estado), action Creators (Funciones), Componente (Código Jsx) 
+
+
+npm install redux react-redux
