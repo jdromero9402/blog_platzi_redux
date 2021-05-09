@@ -37,3 +37,5 @@ ppios 2: store(almacenamiento), Reducers(Estado), action Creators (Funciones), C
 
 
 npm install redux react-redux
+
+npm install redux-thunk
