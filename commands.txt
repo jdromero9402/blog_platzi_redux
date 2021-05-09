@@ -15,3 +15,12 @@ git push -u origin master
 
 const -> stateless o componentes funcionales
 class -> componente de clase
+
+fases componentes:
+initialization (setup props and state)
+mounting (componentwillmount, render obligatorio, despliega todo el jsx a la pantalla, componentdidmount)
+updation (props, states)
+unmounting(componentWillUnmount)
+
+
+npm install axios -> instalar axios q sirve para ejecutar apis desde una URL

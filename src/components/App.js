@@ -1,9 +1,18 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 
 class App extends Component {
   constructor(){
     super();
     this.state = {
+      usuarios: []
+    }
+  }
+
+  async componentDidMount() {
+    const respuesta = await axios.get('https://jsonplaceholder.typicode.com/users');
+    console.log(respuesta);
+    this.setState({
       usuarios: [
         {
           nombre: 'Jesus',
@@ -16,7 +25,8 @@ class App extends Component {
           enlace: 'platzi.com',
         }
       ]
-    }
+    })
+    console.log("hola");
   }
 
   ponerFilas = () => (
@@ -36,6 +46,7 @@ class App extends Component {
   ) ;
 
   render(){
+    console.log(this.state.usuarios);
     return(
     <div className="margen">
     <table className="tabla">
