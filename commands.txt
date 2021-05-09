@@ -24,3 +24,8 @@ unmounting(componentWillUnmount)
 
 
 npm install axios -> instalar axios q sirve para ejecutar apis desde una URL
+
+npm install react-routes-dom -> 
+
+rafce para crear funciones stateless
+
