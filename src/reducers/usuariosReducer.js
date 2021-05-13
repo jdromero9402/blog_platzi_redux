@@ -8,10 +8,8 @@ export default (state = INITIAL_STATE, action) => {
     switch (action.type) {
         case TRAER_TODOS:
             return { ...state, usuarios: action.payload}
-            break;
 
         default:
             return state;
-            break;
     }
 }
