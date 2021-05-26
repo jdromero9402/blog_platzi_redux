@@ -6,7 +6,7 @@ export const traerTodos = () => async (dispatch) => {
         type: CARGANDO
     })
     try {
-        const respuesta = await axios.get('https://jsonplaceholder.typicode.com/userss');
+        const respuesta = await axios.get('https://jsonplaceholder.typicode.com/users');
         dispatch({
             type: TRAER_TODOS,
             payload: respuesta.data,
